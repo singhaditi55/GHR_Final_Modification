@@ -13,7 +13,10 @@ import FactoryIcon from "@mui/icons-material/Factory";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 
 // Import the ThemeContext from Home.js
-import { ThemeContext } from "./Home";
+// Import the ThemeContext from Home.js
+import { ThemeContext } from '../context/ThemeContext';
+
+// Import the ThemeContext
 
 // Import background image (using the same as in Home.js for consistency)
 import productBg from "../components/assets/bg.png";

@@ -1,4 +1,4 @@
-              import React, { useState } from "react";
+              import React, { useState, useContext } from "react";
               import { Link } from "react-router-dom";
               import logo from "../components/assets/logo.png";
               import { motion, AnimatePresence } from "framer-motion";
@@ -6,20 +6,19 @@
                 AppBar, 
                 Toolbar, 
                 IconButton, 
-                Box, 
-                Collapse, 
+                Box,
                 List, 
                 ListItem, 
                 ListItemText, 
                 ListItemIcon,
-                Drawer,
                 Divider,
                 Dialog,
                 Grid,
                 Typography,
                 Container,
                 Card,
-                CardContent
+                CardContent,
+                Tooltip
               } from '@mui/material';
               import MenuIcon from '@mui/icons-material/Menu';
               import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -36,8 +35,9 @@
               import TextureIcon from '@mui/icons-material/Texture';
               import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
               import CircleIcon from '@mui/icons-material/Circle';
-              import NatureIcon from '@mui/icons-material/Nature';
-
+              import Brightness4Icon from "@mui/icons-material/Brightness4";
+              import Brightness7Icon from "@mui/icons-material/Brightness7";
+              import { ThemeContext } from "../context/ThemeContext";
 
               const Header = () => {
                 // Add state to track if dropdowns are open

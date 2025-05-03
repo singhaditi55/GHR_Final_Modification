@@ -27,7 +27,7 @@ import RecyclingIcon from '@mui/icons-material/Recycling';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 
 // Import the ThemeContext from Home.js
-import { ThemeContext } from './Home';
+import { ThemeContext } from '../context/ThemeContext';
 
 // Import background image
 import aboutBg from '../components/assets/bg.png';
