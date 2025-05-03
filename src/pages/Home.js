@@ -247,7 +247,7 @@
                   mb: 3,
                 }}
               >
-                Welcome to GHR Industries
+                Welcome to GHR Industries (1st)
               </Typography>
 
               <Typography
